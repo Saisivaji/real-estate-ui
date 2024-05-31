@@ -1,0 +1,15 @@
+.searchBar {
+  .type {
+    button {
+      padding: 16px 36 px;
+      border: 1px solid #999;
+      cursor: pointer;
+      color: white;
+
+      &.active {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}

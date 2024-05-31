@@ -1,4 +1,4 @@
-@mixin lg {
+@mixin sm {
   @media (max-width: 738px) {
     @content;
   }
@@ -8,7 +8,7 @@
     @content;
   }
 }
-@mixin sm {
+@mixin lg {
   @media (max-width: 1366px) {
     @content;
   }
