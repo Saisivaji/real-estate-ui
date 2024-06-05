@@ -1,29 +1,67 @@
+@import "../../responsive.scss";
 .homePage {
   display: flex;
   height: 100%;
   .textContainer {
     flex: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include lg {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @include md {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
     .wrapper {
       padding-right: 100px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 50px;
+      gap: 30px;
       height: 100%;
 
-      .title{
-        font-size: 25px;
+      @include md {
+        padding: 0%;
       }
-      .boxes{
+
+      @include lg {
+        justify-content: center;
+        font-size: larger;
+      }
+
+      .title {
+        font-size: 25px;
+        @include lg {
+          font-size: 48px;
+        }
+      }
+      .boxes {
         display: flex;
         justify-content: space-between;
-
-        h1{
-            font-size: 36px;
+        @include sm {
+          flex-direction: column;
+          display: none;
         }
-        h2{
-            font-size: 20px;
-            font-weight: 300;
+
+        h1 {
+          font-size: 36px;
+        }
+        h2 {
+          font-size: 20px;
+          font-weight: 300;
         }
       }
     }
@@ -34,10 +72,16 @@
     position: relative;
     display: flex;
     align-items: center;
+    @include md {
+      display: none;
+    }
     img {
-      width: 115%;
+      width: 110%;
       position: absolute;
       right: 0;
+      @include lg {
+        width: 105%;
+      }
     }
   }
 }

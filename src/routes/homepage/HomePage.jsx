@@ -4,8 +4,8 @@ export default function HomePage() {
   return (
     <div className="homePage">
       <div className="textContainer">
-        <div className="wrapper">
-          <div className="title">
+        <div className="title">
+          <div className="wrapper">
             <h1>Find Real Estate & Get Your Dream Place </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
