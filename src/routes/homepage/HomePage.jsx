@@ -1,4 +1,4 @@
-import SearchBar from "../../components/searchBar/SearchBar.jsx";
+import SearchBar from "../../components/searchBar/searchBar.jsx";
 import "./homePage.scss";
 export default function HomePage() {
   return (
@@ -25,7 +25,7 @@ export default function HomePage() {
               </div>
               <div className="box">
                 <h1>1200+</h1>
-                <h2>Years of Experience</h2>
+                <h2>Property Ready</h2>
               </div>
             </div>
           </div>

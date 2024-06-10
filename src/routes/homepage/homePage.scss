@@ -52,8 +52,12 @@
         display: flex;
         justify-content: space-between;
         @include sm {
-          flex-direction: column;
-          display: none;
+          flex-direction:row;
+          padding:40%;
+          padding-left: 20%;
+          justify-content:center;
+          gap: 35px;
+          // display: none;
         }
 
         h1 {
