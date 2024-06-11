@@ -1,6 +1,6 @@
-import HomePage from "../../real-estate-ui/src/routes/homePage/homePage"
+import HomePage from "../../real-estate-ui/src/routes/homePage/homePage";
 import Layout from "./routes/layout/layout";
-import ListPage from "../../real-estate-ui/src/routes/listPage/listPage"
+import ListPage from "../../real-estate-ui/src/routes/listPage/listPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
