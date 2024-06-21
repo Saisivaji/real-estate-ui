@@ -2,6 +2,7 @@ import HomePage from "../../real-estate-ui/src/routes/homePage/homePage";
 import Layout from "./routes/layout/layout";
 import ListPage from "../../real-estate-ui/src/routes/listPage/listPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import SinglePage from "./routes/singlePage/singlePage";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +17,10 @@ function App() {
         {
           path: "/list",
           element: <ListPage />,
+        },
+        {
+          path: "/singlePage",
+          element: <SinglePage />,
         },
       ],
     },

@@ -4,7 +4,6 @@ import Filter from "../../components/filter/filter";
 import Card from "../../components/card/card";
 import Map from "../../components/map/map";
 
-
 export default function ListPage() {
   const data = listData;
   return (
@@ -17,7 +16,9 @@ export default function ListPage() {
           ))}
         </div>
       </div>
-      <div className="mapContainer"><Map item={data}/></div>
+      <div className="mapContainer">
+        <Map item={data} />
+      </div>
     </div>
   );
 }

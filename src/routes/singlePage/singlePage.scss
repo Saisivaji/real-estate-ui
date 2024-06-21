@@ -1,0 +1,26 @@
+.singlePage{
+    display:  flex;
+    height: 100px;
+
+    .details{
+        flex: 3;
+        .wrapper{
+            padding-right: 50px;
+
+            .info{
+                .top{
+                    
+                },
+                .bottom{}
+            }
+        }
+    }
+    .features{
+        flex: 2;
+        background-color:#fcf5f3 ;
+        
+        .wrapper{
+            padding: 0px 20px;
+        }
+    }
+}
