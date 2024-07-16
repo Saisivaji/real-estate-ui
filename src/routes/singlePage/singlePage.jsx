@@ -1,5 +1,6 @@
 import Slider from "..//../components/slider/slider";
 import { singlePostData, userData } from "../../libraries/dummyData";
+import "./singlePage.scss";
 
 export default function SinglePage() {
   return (
@@ -15,14 +16,16 @@ export default function SinglePage() {
                   <img src="./pin.png" alt="" />
                   <span>{singlePostData.address}</span>
                 </div>
-                <div className="price">{singlePostData.price}</div>
+                <div className="price">${singlePostData.price}</div>
               </div>
               <div className="user">
                 <img src={userData.img} alt="" />
                 <span>{userData.name}</span>
               </div>
             </div>
-            <div className="bottom"></div>
+            <div className="bottom">
+              {singlePostData.description}
+            </div>
           </div>
         </div>
       </div>
